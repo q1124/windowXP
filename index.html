@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="/css/index.css">
 
-    <title>XP 桌面</title>
+    <title>XP Desktop</title>
 </head>
 
 <body>
@@ -691,7 +691,7 @@
                 </div>
             </div>
             <div class="footer_item right">
-                <img src="./XP_image/喇巴.png" alt="" class="footer_img_logo">
+                <img src="./XP_image/喇巴.png" alt="" class="footer_img_logo">
                 <img src="./XP_image/輸出.png" alt="" class="footer_img_logo">
                 <img src="./XP_image/防火.png" alt="" class="footer_img_logo">
                 <div class="footer_timer">4:15PM</div>
@@ -711,82 +711,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script src="/function.js"></script>
     <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-    <script>
-        // boot up
-        function bootImage(){
-            const bootUP = document.getElementById("bootUP");
-            const root = document.getElementById("root");
-
-            bootUP.style.display="none";
-            root.style.display="block";
-        }
-        function signOut() {
-            const bootUP = document.getElementById("bootUP");
-            const root = document.getElementById("root");
-
-            bootUP.style.display="block";
-            root.style.display="none";
-        }
-        // move icon
-        for (i = 1; i <= 7; i++) {
-            // console.log(i)
-            console.log("#dragThing" + i)
-            // 先宣告dragThing為新變數
-            const dragThing = "#" + "dragThing" + i
-            $(function () {
-                //$()這裡面不能做複合組合 需要先宣告再帶進去
-                $(dragThing).draggable()
-            });
-        }
-        // move windows
-        for (i = 1; i <= 7; i++) {
-            // console.log(i)
-            console.log("#openWindow" + i)
-            // 先宣告dragThing為新變數
-            const openWindow = "#" + "openWindow" + i
-            $(function () {
-                //$()這裡面不能做複合組合 需要先宣告再帶進去
-                $(openWindow).draggable({
-                    //游標位置
-                    cursorAt: {
-                        top: -200,
-                        left: -100
-                    }
-                })
-            });
-        }
-        //open windows
-        $(document).ready(function () {
-            $("#startBtn").click(function () {
-                $("#bottonWin").toggle();
-            });
-        });
-        for (i = 1; i <= 7; i++) {
-            const dragThing = "#" + "dragThing" + i
-            const openWindow = "#" + "openWindow" + i
-            console.log(openWindow)
-            $(document).ready(function () {
-                $(dragThing).click(function () {
-                    $(openWindow).toggle();
-                })
-            })
-        }
-        // close windows
-        for (i = 1; i <= 7; i++) {
-            const Close = "#" + "Close" + i
-            const openWindow = "#" + "openWindow" + i
-            console.log(openWindow)
-            $(document).ready(function () {
-                $(Close).click(function () {
-                    $(openWindow).hide();
-                })
-            })
-        }
-
-    </script>
 
 </body>
 
