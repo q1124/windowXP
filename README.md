@@ -4,7 +4,7 @@
 
 懷舊XP介面
 
-window XP [link](https://q1124.github.io/snackGame/#/)
+window XP [link](https://q1124.github.io/windowXP/index.html)
 
 ## Technique & skill
 * Html
