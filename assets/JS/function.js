@@ -61,7 +61,6 @@ for (i = 1; i <= 7; i++) {
 for (i = 1; i <= 7; i++) {
     const Close = "#" + "Close" + i
     const openWindow = "#" + "openWindow" + i
-    console.log(openWindow)
     $(document).ready(function () {
         $(Close).click(function () {
             $(openWindow).hide();
