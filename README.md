@@ -4,7 +4,7 @@
 
 懷舊XP介面
 
-window XP [link](https://q1124.github.io/windowXP/index.html)
+window XP [link](https://q1124.github.io/windowXP/)
 
 ## Technique & skill
 * Html
